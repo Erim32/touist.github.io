@@ -1,0 +1,236 @@
+/*************************************************************************************************/
+/*
+*
+*   URL:http://codepen.io/getagain/pen/Ftien;
+*/
+.btn {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 53px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #888;
+    padding-bottom: 70px;
+}
+.btn span.icon,
+.btn span.title {
+    display: block;
+    position: relative;
+    line-height: 50px;
+    padding: 0 30px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    min-width: 135px;
+}
+.btn span.left {
+    float: left;
+    border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+}
+.btn span.right {
+    float: right;
+    border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+}
+.btn span.icon {
+    font-size: 23px;
+    background-color: #00967f;
+    -webkit-box-shadow: 0 3px 0 0 #007261;
+    box-shadow: 0 3px 0 0 #007261;
+    text-shadow: 0px 1px 1px #888;
+}
+.btn span.title {
+    -webkit-box-shadow: 0 3px 0 0 #00ae94;
+    box-shadow: 0 3px 0 0 #00ae94;
+    background-color: #00cdae;
+}
+.btn span.arrow-left,
+.btn span.arrow-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    -webkit-transition: all .15s;
+    -transition: all .15s;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+}
+.btn.left span.arrow-left {
+    right: 0;
+    -webkit-box-shadow: 10px 0 0 0 #00cdae, 10px 3px 0 0 #00ae94;
+    box-shadow: 10px 0 0 0 #00cdae, 10px 3px 0 0 #00ae94;
+    border-right: 10px solid #00cdae;
+}
+.btn.right span.arrow-left {
+    right: 0;
+    -webkit-box-shadow: 10px 0 0 0 #00967f, 10px 3px 0 0 #007261;
+    box-shadow: 10px 0 0 0 #00967f, 10px 3px 0 0 #007261;
+    border-right: 10px solid #00967f;
+}
+.btn.left span.arrow-right {
+    left: 0;
+    -webkit-box-shadow: -10px 0 0 0 #00967f, -10px 3px 0 0 #007261;
+    box-shadow: -10px 0 0 0 #00967f, -10px 3px 0 0 #007261;
+    border-left: 10px solid #00967f;
+}
+.btn.right span.arrow-right {
+    left: 0;
+    -webkit-box-shadow: -10px 0 0 0 #00cdae, -10px 3px 0 0 #00ae94;
+    box-shadow: -10px 0 0 0 #00cdae, -10px 3px 0 0 #00ae94;
+    border-left: 10px solid #00cdae;
+}
+.btn span.slant-left,
+.btn span.slant-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-bottom: 50px solid transparent;
+    -webkit-transition: all .15s;
+    -transition: all .15s;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+}
+.btn.left span.slant-right {
+    left: 0;
+    -webkit-box-shadow: -10px 0 0 0 #00967f, -10px 3px 0 0 #007261;
+    box-shadow: -10px 0 0 0 #00967f, -10px 3px 0 0 #007261;
+    border-left: 10px solid #00967f;
+}
+.btn.right span.slant-right {
+    left: 0;
+    -webkit-box-shadow: -10px 0 0 0 #00cdae, -10px 3px 0 0 #00ae94;
+    box-shadow: -10px 0 0 0 #00cdae, -10px 3px 0 0 #00ae94;
+    border-left: 10px solid #00cdae;
+}
+.btn.left span.slant-left {
+    right: 0;
+    -webkit-box-shadow: 10px 0 0 0 #00cdae, 10px 3px 0 0 #00ae94;
+    box-shadow: 10px 0 0 0 #00cdae, 10px 3px 0 0 #00ae94;
+    border-right: 10px solid #00cdae;
+}
+.btn.right span.slant-left {
+    right: 0;
+    -webkit-box-shadow: 10px 0 0 0 #00967f, 10px 3px 0 0 #007261;
+    box-shadow: 10px 0 0 0 #00967f, 10px 3px 0 0 #007261;
+    border-right: 10px solid #00967f;
+}
+.btn:active,
+.btn.active {
+    height: 51px;
+}
+.btn:hover {}.btn:hover span.arrow-left {
+    right: 10px;
+}
+.btn:hover span.arrow-right {
+    left: 10px;
+}
+.btn:hover span.slant-left {
+    right: 10px;
+}
+.btn:hover span.slant-right {
+    left: 10px;
+}
+.btn-small {
+    height: 30px;
+    font-size: 12px;
+    line-height: 10px;
+}
+a.btn-small span.btn {
+    height: 30px;
+}
+/*************************************************************************************************/
+/*
+* custom code: erim
+*/
+.right{float: right;}
+
+.jumbotron .container {
+    max-width: 50rem;
+}
+.custom-btn a{
+    width: 660px
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+}
+.navbar-nav .nav-item {
+    margin: 0 52px;
+}
+
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-toggler{
+    padding-left: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header{background-color: #333333;}
+
+.section0{background-color: #FF5722;}
+.section1{
+    background-color: #ffffff ;
+    padding-top: 60px;
+}
+.section2{
+    background-color: #FF5722;
+    padding-top: 60px;
+}
+
+
+.section0 .description{color: #ffffff !important; }
+.section1 p{text-align: left;}
+.section1 h2{padding-bottom: 15px;}
+.img_carrousel{
+    width: 600px;
+    height: 400px;
+}
+
+.changelog button{ 
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin:25px;
+}
+
+.secret{
+    background-color: #ffffff;
+    border-radius: 1%;
+    padding:25px;
+    text-align: left;
+}
+
+.section2 .btn{
+    padding-bottom: 0;
+    border-radius: 15%;
+    min-width: 100px;
+}
+footer {
+     padding-top: 0rem; 
+     padding-bottom: 0rem; 
+     text-align: center;
+     text-decoration:none;
+     background-color: #373a3c!important;
+}
+
+footer a:hover{
+    color: rgba(255,255,255,.75);
+    text-decoration:none;
+}
+
+footer a{
+    color:  rgba(255,255,255,.5);
+    text-decoration:none;
+}
+
